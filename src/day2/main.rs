@@ -16,8 +16,8 @@ fn exercise1(content: &str) {
     let list: Vec<&str> = content.split("\n").collect();
     let mut counter = 0;
     for index in 0..list.len() {
-        let entry1 = list[index];
-        let parts: Vec<&str> = entry1.split_whitespace().collect();
+        let line = list[index];
+        let parts: Vec<&str> = line.split_whitespace().collect();
         let range = parts[0];
         let letter = parts[1].chars().next().unwrap();
         let password = parts[2];
@@ -42,8 +42,8 @@ fn exercise2(content: &str) {
     let list: Vec<&str> = content.split("\n").collect();
     let mut counter = 0;
     for index in 0..list.len() {
-        let entry1 = list[index];
-        let parts: Vec<&str> = entry1.split_whitespace().collect();
+        let line = list[index];
+        let parts: Vec<&str> = line.split_whitespace().collect();
         let range = parts[0];
         let letter = parts[1].as_bytes()[0];
         let password = parts[2].as_bytes();
