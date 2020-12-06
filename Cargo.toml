@@ -6,7 +6,7 @@ edition = "2018"
 
 [[bin]]
 name = "main"
-path = "src/day5/main.rs"
+path = "src/day6/main.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
